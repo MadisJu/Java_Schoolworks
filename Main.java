@@ -16,7 +16,7 @@ public class Main {
         }
     }
 
-    public static int[][] maatriks(int n)
+    public static int[][] maatriks(int n) //Making an alternating matrix between 1/0 whatever, trying to make it with as less if's as possible
     {
         int[][] matrix = new int[n][n];
         boolean a = false;
@@ -26,7 +26,8 @@ public class Main {
                 matrix[j][k] = (a) ? 1 : 0;
                 a ^= true;
             }
-            a = (n%2 == 0) && (j%2 == 0) ^ true;
+            a = !((n % 2 == 0) && ((j - 1) % 2 == 0)); // this doesnt work yet
+            a = ((n&2) == 0) && a;
         }
 
         return matrix;
