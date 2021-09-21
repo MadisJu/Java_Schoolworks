@@ -26,7 +26,7 @@ public class Main {
                 matrix[j][k] = (a) ? 1 : 0;
                 a ^= true;
             }
-            a = !((n % 2 == 0) && ((j - 1) % 2 == 0)); // this doesnt work yet
+            a = !((n % 2 == 0) && ((j - 1) % 2 == 0)); // this doesnt work yet - loool
             a = ((n&2) == 0) && a;
         }
 
