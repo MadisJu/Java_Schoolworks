@@ -9,7 +9,7 @@ public class Numero_uno {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                int num = new Random().nextInt(1000);
+                int num = new Random().nextInt(100);
                 matirix[i][j] = num;
             }
 
@@ -18,8 +18,20 @@ public class Numero_uno {
             for (int j = 0; j < n; j++) {
                 System.out.print(matirix[i][j] + " ");
             }
-            System.out.println("\n");
+            System.out.println("");
 
+        }
+        int numm2 = 0;
+        for (int i = 0; i < 6; i++) {
+            matirix[i + 1][numm2] = matirix[numm2][i + 1];
+            numm2 += 1;
+        }
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(matirix[i][j] + " ");
+            }
+            System.out.println("");
         }
 
     }
