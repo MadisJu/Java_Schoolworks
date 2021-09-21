@@ -2,17 +2,17 @@ package main;
 
 import java.util.Arrays;
 
-public class Main2 {
+public class Main {
 
     public static void main(String[] args) {
 
         int[][] tt = maatriks(10);
 
-        for (int i = 0; i < tt.length; i++) {
+        for (int[] ints : tt) {
             for (int j = 0; j < tt.length; j++) {
-                System.out.print(tt[i][j] + " ");
+                System.out.print(ints[j] + " ");
             }
-            System.out.println("");
+            System.out.println(" ");
         }
     }
 
