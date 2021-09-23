@@ -9,10 +9,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+        r = new Random();
+
         int[][] tt = maatriks(10);
         int[][] pp = rand_maatriks(10);
 
-        r = new Random();
+
 
         for (int[] ints : tt) {
             for (int j = 0; j < tt.length; j++) {
@@ -20,6 +22,10 @@ public class Main {
             }
             System.out.println(" ");
         }
+
+        System.out.println(matrix_diagonals(tt));
+        System.out.println(matrix_all_sum(tt));
+        System.out.println(matrix_corners(tt));
     }
 
     public static int[][] maatriks(int n) //Making an alternating matrix between 1/0 whatever, trying to make it with as less if's as possible
@@ -48,15 +54,29 @@ public class Main {
 
         return matrix;
     }
-    public static void matrix_diagonals(int[][] matrix)
+    public static long matrix_diagonals(int[][] matrix)
     {
         long sum = 0;
 
-        int x_len = matrix.length;
+        int x_len = matrix.length - 1;
+        int x_pos_left = 0;
+        int x_pos_right = x_len;
+        for (int i = 0; i <= x_len; i++) {
 
-        for (int i = 0; i < x_len; i++) {
-            
+            if(x_pos_left == x_pos_right)
+            {
+                sum += (matrix[i][x_pos_left]);
+            }
+            else
+            {
+                sum += (matrix[i][x_pos_left] + matrix[i][x_pos_right]);
+            }
+            x_pos_left++;
+            x_pos_right--;
         }
+
+        return sum;
+
     }
 
     public static int matrix_corners(int[][] matrix)
