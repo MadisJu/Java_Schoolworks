@@ -54,15 +54,28 @@ public class Main {
 
         int x_len = matrix.length;
 
+        for (int i = 0; i < x_len; i++) {
+            
+        }
+    }
 
+    public static int matrix_corners(int[][] matrix)
+    {
+        return matrix[0][matrix.length - 1] + matrix[0][0] + matrix[matrix.length - 1][0] + matrix[matrix.length - 1][matrix.length - 1];
+    }
+
+    public static long matrix_all_sum(int[][] matrix)
+    {
+        long sum = 0;
+
+        int x_len = matrix.length;
 
         for (int i = 0; i < x_len; i++) {
             for (int j = 0; j < x_len; j++) {
-                if(j == 0 || j == x_len) {
-                    break;
-                }
-
+                sum += matrix[i][j];
             }
         }
+
+        return sum;
     }
 }
