@@ -14,6 +14,8 @@ public class Main {
         int[][] tt = maatriks(10);
         int[][] pp = rand_maatriks(10);
 
+        int[][] zz = rand_maatriks(10);
+
 
 
         for (int[] ints : tt) {
@@ -26,6 +28,8 @@ public class Main {
         System.out.println(matrix_diagonals(tt));
         System.out.println(matrix_all_sum(tt));
         System.out.println(matrix_corners(tt));
+
+        System.out.println(matrix_corners(pp));
     }
 
     public static int[][] maatriks(int n) //Making an alternating matrix between 1/0 whatever, trying to make it with as less if's as possible
