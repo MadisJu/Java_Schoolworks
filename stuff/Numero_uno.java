@@ -25,6 +25,7 @@ public class Numero_uno {
             }
             System.out.println("");
 
+
         }
 
     }
