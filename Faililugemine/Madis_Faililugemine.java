@@ -3,16 +3,30 @@ package main.Faililugemine;
 import sun.awt.OSInfo;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Madis_Faililugemine {
 
-    Scanner scam;
+    public static Scanner scam;
 
-    public static void main(String[] args) {
+    public File GetFail()
+    {
+        return new File("C:\\Users\\madis.tamberg\\IdeaProjects\\Java_Schoolworks\\Faililugemine\\Fail.txt");
+    }
+
+    public static void main(String[] args) throws FileNotFoundException {
+
+        try {
+            File myfile =   new File("C:\\Users\\madis.tamberg\\IdeaProjects\\Java_Schoolworks\\Faililugemine\\Fail.txt");
+            scam = new Scanner(myfile);
+        }
+        catch (FileNotFoundException e)
+        {
+            System.out.println("lol!");
+        }
 
 
-        File myfile =   new File("C:\\Users\\madis.tamberg\\IdeaProjects\\Java_Schoolworks\\Faililugemine\\Fail.txt");
 
     }
 
