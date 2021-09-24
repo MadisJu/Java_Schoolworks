@@ -1,2 +1,2 @@
 # Java_Schoolworks
-Java schoolworks with classmate
+Java homeworks at school ):
