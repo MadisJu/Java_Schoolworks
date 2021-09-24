@@ -24,8 +24,6 @@ public class Numero_uno {
                 System.out.print(matirix[i][j] + " ");
             }
             System.out.println("");
-
-
         }
 
     }
