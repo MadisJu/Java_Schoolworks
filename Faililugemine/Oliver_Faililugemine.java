@@ -16,7 +16,7 @@ public class Oliver_Faililugemine {
             }
         }
         catch (Exception e) {
-            System.out.println("Error");
+            System.out.println("Error!");
         }
 
     }
