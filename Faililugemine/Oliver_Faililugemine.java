@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Oliver_Faililugemine {
+public class Oliver_Faililugemine { // *AHEM* Eerp tegi
 
     public static void main(String[] args) {
         int b = tähedFailis("false");
