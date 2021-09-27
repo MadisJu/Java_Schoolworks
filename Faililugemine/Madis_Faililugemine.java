@@ -1,6 +1,5 @@
 package main.Faililugemine;
 
-import sun.awt.OSInfo;
 
 import java.io.File;
 import java.io.FileNotFoundException;
