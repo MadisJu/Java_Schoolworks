@@ -2,6 +2,7 @@ package main.stuff;
 
 import java.util.Random;
 
+// https://github.com/MadisJu/Java_Schoolworks
 
 public class Main {
 
