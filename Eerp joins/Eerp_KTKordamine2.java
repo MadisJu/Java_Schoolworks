@@ -43,7 +43,6 @@ public class Eerp_KTKordamine2 {
                 skoorid.remove(koht);
                 nimed.remove(koht);
             }
-
         }
         catch (Exception e) {
             System.out.println("Faili ei ole/ ei leidnud.");

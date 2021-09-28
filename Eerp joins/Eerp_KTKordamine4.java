@@ -22,7 +22,6 @@ public class Eerp_KTKordamine4 {
                     matrix = new int[list.length][list.length];
                 }
 
-
                 if (list[0].equals("")&& kord == 0){
                     print_maatriks(matrix);
                     System.out.println("Nurkade summa: " + nurgad(matrix));

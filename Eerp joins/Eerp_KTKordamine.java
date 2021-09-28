@@ -49,8 +49,5 @@ public class Eerp_KTKordamine {
             System.out.println("Faili ei ole/ ei leidnud.");
             return 0;
         }
-
-
     }
-
 }

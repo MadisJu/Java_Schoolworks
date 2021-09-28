@@ -24,10 +24,8 @@ public class Eerp_KTKordamine3 {
                     else {
                         System.out.print(nimed[i].split("")[0]+". ");
                     }
-
                 }
             }
-
         }
         catch (Exception e) {
             System.out.println("Faili ei leidnud.");
