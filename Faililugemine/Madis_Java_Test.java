@@ -17,7 +17,8 @@ public class Madis_Java_Test {
 
 
         //Nimed
-        List<String> Nimed = new ArrayList<String>();
+        List<String> Nimed = new ArrayList<String>(); //Basically plaan on nii et, nimed hoida arraylistis.
+        //Kuna Arraylistist saab nimede indexi küsida, saame selle int[][] mõlema indexid Nimed.indexOf()-ga
 
         while(lugeja.hasNext())
         {
