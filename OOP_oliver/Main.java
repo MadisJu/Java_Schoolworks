@@ -6,5 +6,6 @@ public class Main {
 
         koer1.setColor("nigger");
         System.out.println(koer1.toString());
+        System.out.println();
     }
 }
