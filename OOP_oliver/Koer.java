@@ -2,7 +2,7 @@ package main.OOP_oliver;
 
 public class Koer {
 
-    private String color;
+    String color;
     private int weigh;
     private int age;
 
