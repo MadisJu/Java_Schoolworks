@@ -29,7 +29,7 @@ public class Oliver_kordamine_2 {
 
                 }
                 dic.put(name, sum);
-                System.out.println(dic[]);
+                System.out.println();
             }
         }
         catch (Exception e) {
