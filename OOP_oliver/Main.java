@@ -1,5 +1,7 @@
 package main.OOP_oliver;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Lennuk Fokker_F50 = new Lennuk("Fokker F50", 530, 46);
@@ -8,8 +10,8 @@ public class Main {
         Reis reis2 = new Reis("Horaatia", 150, BN2, 9);
         Reis reis3 = new Reis("Dirhami",1750,  Fokker_F50, 1);
 
-        System.out.println(reis3.vabad_kohad());
-        System.out.println(reis3.kestvus() + " minutit");
+
+
 
     }
 }
