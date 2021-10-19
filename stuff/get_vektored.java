@@ -15,6 +15,7 @@ public class get_vektored {
         test.add(7);
         test.add(1);
 
+
         Collections.sort(test);
 
         for (Integer i: test) {
