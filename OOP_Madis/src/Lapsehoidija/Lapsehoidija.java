@@ -27,9 +27,6 @@ public class Lapsehoidija {
 
     @Override
     public String toString() {
-        return "Lapsehoidija{" +
-                "num=" + num +
-                ", nimi='" + nimi + '\'' +
-                '}';
+        return num + " " + nimi;
     }
 }
