@@ -1,4 +1,6 @@
-package main.OOP_oliver;
+package main.OOP_oliver.lennuk;
+
+import main.OOP_oliver.lennuk.Lennuk;
 
 public class Reis {
 

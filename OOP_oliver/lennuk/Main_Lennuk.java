@@ -1,6 +1,4 @@
-package main.OOP_oliver;
-
-import java.util.ArrayList;
+package main.OOP_oliver.lennuk;
 
 public class Main_Lennuk {
     public static void main(String[] args) {

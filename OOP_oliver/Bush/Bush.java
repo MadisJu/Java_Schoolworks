@@ -1,4 +1,4 @@
-package main.OOP_oliver;
+package main.OOP_oliver.Bush;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
