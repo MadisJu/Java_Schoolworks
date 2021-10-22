@@ -2,8 +2,10 @@ package main.OOP_Madis.src.AutoRent;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class main {
@@ -24,7 +26,18 @@ public class main {
         }
         while (scam2.hasNext())
         {
-            rentni.add(new Rentnik(scam2.next(), scam2.nextInt(), scam2.nextInt()));
+            Random r = new Random();
+            int i = r.nextInt(a.size());
+
+            ArrayList<Auto> p = new ArrayList<Auto>();
+
+            for (int j = 0; j < i; j++) {
+                p.add(a.get(r.nextInt(i)));
+                a.remove(j); // Todo this shit later thank you.
+                i--;
+            }
+
+            rentni.add(new Rentnik(scam2.next(), , scam2.nextInt()));
         }
     }
 }
