@@ -1,6 +1,5 @@
-package main.OOP_oliver.Bush;
+package main.OOP_oliver.Bush_package;
 
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Bush {

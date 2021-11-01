@@ -1,6 +1,4 @@
-package main.OOP_oliver.Lapsehoidja;
-
-import main.OOP_oliver.Lapsehoidja.Lapsehoidja;
+package main.OOP_oliver.Lapsehoidja_package;
 
 import java.io.File;
 import java.io.FileNotFoundException;

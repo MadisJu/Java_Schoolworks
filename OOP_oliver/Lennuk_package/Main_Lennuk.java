@@ -1,6 +1,4 @@
-package main.OOP_oliver.Lennuk;
-
-import Reis;
+package main.OOP_oliver.Lennuk_package;
 
 public class Main_Lennuk {
     public static void main(String[] args) {

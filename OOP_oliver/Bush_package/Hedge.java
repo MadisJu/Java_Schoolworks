@@ -1,6 +1,4 @@
-package main.OOP_oliver.Bush;
-
-import main.OOP_oliver.Bush.Bush;
+package main.OOP_oliver.Bush_package;
 
 import java.util.Arrays;
 

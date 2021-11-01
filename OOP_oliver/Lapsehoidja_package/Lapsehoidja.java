@@ -1,4 +1,4 @@
-package main.OOP_oliver.Lapsehoidja;
+package main.OOP_oliver.Lapsehoidja_package;
 
 public class Lapsehoidja {
 

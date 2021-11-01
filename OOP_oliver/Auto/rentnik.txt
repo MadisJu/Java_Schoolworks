@@ -1,0 +1,7 @@
+Hertz 22 36
+AVIS 18 42
+Europcar 20 38
+Alamo 25 32
+Budget 24 42
+enterprise 23 35
+Thrifty 38 40

@@ -10,6 +10,13 @@ public class Car {
     private String reg_num;
     private String sort;
 
+    public Car(String brand, String model, String reg_num, String sort) {
+        this.brand = brand;
+        this.model = model;
+        this.reg_num = reg_num;
+        this.sort = sort;
+    }
+
     public String getBrand() {
         return brand;
     }
@@ -28,10 +35,10 @@ public class Car {
 
     public LocalDate GenerateRandomDate() {
 
-        LocalDate startDate = LocalDate.of(1990, 1, 1);
+        LocalDate startDate = LocalDate.now();
         long start = startDate.toEpochDay();
 
-        LocalDate endDate = LocalDate.now();
+        LocalDate endDate = LocalDate.of(2030, 12, 30);
         long end = endDate.toEpochDay();
 
         long randomEpochDay = ThreadLocalRandom.current().longs(start, end).findAny().getAsLong();

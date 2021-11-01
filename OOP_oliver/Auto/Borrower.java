@@ -1,20 +1,23 @@
 package main.OOP_oliver.Auto;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.Scanner;
 
 public class Borrower {
 
-    private String company_name;
+    private final String company_name;
     private ArrayList<Car> available_cars;
     private double car_daily_rent;
     private double SUV_daily_rent;
+
+    public Borrower(String company_name, ArrayList<Car> available_cars, double car_daily_rent, double SUV_daily_rent) {
+        this.company_name = company_name;
+        this.available_cars = available_cars;
+        this.car_daily_rent = car_daily_rent;
+        this.SUV_daily_rent = SUV_daily_rent;
+    }
 
     public ArrayList<Car> getAvailable_cars() {
         return available_cars;
@@ -45,6 +48,8 @@ public class Borrower {
 
         long noOfDaysBetween = ChronoUnit.DAYS.between(car.GenerateRandomDate(), LocalDate.now());
 
+        noOfDaysBetween = Math.abs(noOfDaysBetween);
+
         if (Objects.equals(car.getSort(), "maastur")) {
             return noOfDaysBetween*SUV_daily_rent*0.8;
         }
@@ -70,6 +75,9 @@ public class Borrower {
             }
 
         }
+
+        return -1;
+
     }
 
     @Override

@@ -1,7 +1,4 @@
-package main.OOP_oliver.Bush;
-
-import main.OOP_oliver.Bush.Bush;
-import main.OOP_oliver.Bush.Hedge;
+package main.OOP_oliver.Bush_package;
 
 public class Main_Bush {
 
