@@ -17,16 +17,13 @@ public class Numero_uno {
                 matirix[i][j] = num;
             }
         }
-        System.out.println(all_sum(matirix, n));
-
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(matirix[i][j] + " ");
             }
             System.out.println("");
-
         }
-
+        System.out.println(diagonals(matirix, n));
     }
 
     public static int[][] corners_sum(int[][] matirix, int n){
@@ -38,20 +35,21 @@ public class Numero_uno {
 
         return matirix;
     }
-    public static int[] diagonals(int[][] matirix, int n){
-        int[] diag_sum = new int[(n*2)-2];
-        int temp_sum = 0;
-        int temp = n;
-        for (int i = 0; i <= (n*2)-2; i++)
-            if (i == 0) {
-                diag_sum[i+1] = matirix[i][temp];
+    public static int diagonals(int[][] matirix, int n){
+        int diag_sum = 0;
+        int temp = n-1;
+
+        for (int i = 0; i < n; i++) {
+            if (i == temp) {
+                temp -= 1;
             }
-            else if (i == n) {
-                diag_sum[i] = matirix[i][n];
-            } else {
-                temp_sum += matirix[i - 1][temp - 1];
+            else {
+                diag_sum += matirix[i][i];
+                diag_sum += matirix[i][temp];
+                temp -= 1;
             }
-            temp -= 1;
+        }
+
         return diag_sum;
         }
     public static int all_sum(int[][] matirix, int n) {
