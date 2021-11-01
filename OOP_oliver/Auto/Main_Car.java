@@ -100,19 +100,11 @@ public class Main_Car {
                 System.out.println("Something went wrong");
             }
 
-
         }
 
         for (Car car : cars) {
             System.out.println(car.toString());
         }
-
-
-
-
-
-
-
 
     }
 
