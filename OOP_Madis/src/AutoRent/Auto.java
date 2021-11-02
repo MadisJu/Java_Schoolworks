@@ -52,8 +52,19 @@ public class Auto {
         long a = LocalDate.of(2300, 12, 12).toEpochDay();
         long b = LocalDate.now().toEpochDay();
 
-        long suvaline = ThreadLocalRandom.current().nextLong(b, 1);
+        long suvaline = ThreadLocalRandom.current().nextLong(b, a);
 
         return LocalDate.ofEpochDay(suvaline);
+    }
+
+    @Override
+    public String toString() {
+        LocalDate a = suvalinekuupäev();
+        return "Auto{" +
+                "mark='" + mark + '\'' +
+                ", mudel='" + mudel + '\'' +
+                ", registrinumber='" + registrinumber + '\'' +
+                ", liik='" + liik + '\'' +
+                '}';
     }
 }

@@ -28,6 +28,10 @@ public class Rentnik {
         else return 0;
     }
 
+    public String getFirma() {
+        return firma;
+    }
+
     public ArrayList<Auto> getAutod() {
         return autod;
     }
@@ -52,4 +56,20 @@ public class Rentnik {
         this.a_rendihind = a_rendihind;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder a = new StringBuilder();
+
+        for (Auto auto :
+                autod) {
+            a.append(auto.toString());
+        }
+
+        return "Rentnik{" +
+                "firma='" + firma + '\'' +
+                ", autod=" + a.toString() +
+                ", m_rendihind=" + m_rendihind +
+                ", a_rendihind=" + a_rendihind +
+                '}';
+    }
 }
