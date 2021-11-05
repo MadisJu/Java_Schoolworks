@@ -1,38 +1,38 @@
-package main.OOP_Madis.src.PõõsaÜl;
+package main.OOP_Madis.src.PÃµÃµsaÃœl;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Hekk {
-    private Põõsas[] põõsad;
+    private PÃµÃµsas[] pÃµÃµsad;
     private String nimi;
 
-    public Hekk(Põõsas[] põõsad, String nimi) {
-        this.põõsad = põõsad;
+    public Hekk(PÃµÃµsas[] pÃµÃµsad, String nimi) {
+        this.pÃµÃµsad = pÃµÃµsad;
         this.nimi = nimi;
     }
 
-    public double Kõrgeim()
+    public double KÃµrgeim()
     {
-        double  max_kõrgus = 0.0;
+        double  max_kÃµrgus = 0.0;
 
-        for (Põõsas p: põõsad
+        for (PÃµÃµsas p: pÃµÃµsad
              ) {
-            if(p.getKõrgus() > max_kõrgus)
+            if(p.getKÃµrgus() > max_kÃµrgus)
             {
-                max_kõrgus = p.getKõrgus();
+                max_kÃµrgus = p.getKÃµrgus();
             }
         }
 
-        return max_kõrgus;
+        return max_kÃµrgus;
     }
 
     public double Laius()
     {
         double t = 0;
 
-        for (Põõsas p: põõsad
+        for (PÃµÃµsas p: pÃµÃµsad
              ) {
             t += p.getLaius();
         }
@@ -40,8 +40,8 @@ public class Hekk {
         return t;
     }
 
-    public Põõsas[] getPõõsad() {
-        return põõsad;
+    public PÃµÃµsas[] getPÃµÃµsad() {
+        return pÃµÃµsad;
     }
 
     public String getNimi() {
@@ -51,9 +51,9 @@ public class Hekk {
     @Override
     public String toString() {
         return "Hekk{" +
-                "põõsad=" + Arrays.toString(põõsad) +
+                "pÃµÃµsad=" + Arrays.toString(pÃµÃµsad) +
                 ", nimi='" + nimi + '\'' +
-                ", kõrgeim='" + this.Kõrgeim() + '\'' +
+                ", kÃµrgeim='" + this.KÃµrgeim() + '\'' +
                 ", laius='" + this.Laius() + '\'' +
                 '}';
     }

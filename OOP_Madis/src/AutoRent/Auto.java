@@ -47,7 +47,7 @@ public class Auto {
         this.liik = liik;
     }
 
-    public LocalDate suvalinekuup‰ev()
+    public LocalDate suvalinekuup√§ev()
     {
         long a = LocalDate.of(2300, 12, 12).toEpochDay();
         long b = LocalDate.now().toEpochDay();
@@ -59,7 +59,7 @@ public class Auto {
 
     @Override
     public String toString() {
-        LocalDate a = suvalinekuup‰ev();
+        LocalDate a = suvalinekuup√§ev();
         return "Auto{" +
                 "mark='" + mark + '\'' +
                 ", mudel='" + mudel + '\'' +

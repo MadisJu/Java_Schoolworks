@@ -1,4 +1,7 @@
 package main.OOP_Madis.src.KT_OOP;
+// 12.A Programeerimine
+// Nimi: Madis-Julius Tamberg
+// Kuupäev: 05.11.2021
 
 public class Toode
 {
@@ -16,7 +19,7 @@ public class Toode
     public String Info()
     {
         final StringBuilder sb = new StringBuilder("Toode - ");
-        sb.append(nimi).append(" / ").append(hind).append(" / ").append(ID).append(" ");
+        sb.append(nimi).append(" | maksumusega : ").append(hind).append(" | ostukorvis : ").append(ID).append(" ");
         return sb.toString();
     }
 

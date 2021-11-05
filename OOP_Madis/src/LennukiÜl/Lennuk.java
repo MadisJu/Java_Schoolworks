@@ -1,4 +1,4 @@
-package main.OOP_Madis.src.LennukiÜl;
+package main.OOP_Madis.src.LennukiÃœl;
 
 public class Lennuk {
     private String nimi;

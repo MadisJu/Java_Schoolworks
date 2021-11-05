@@ -1,4 +1,4 @@
-package main.OOP_Madis.src.Lennuki‹l;
+package main.OOP_Madis.src.Lennuki√úl;
 
 public class Reis {
     private String sihtpunk;

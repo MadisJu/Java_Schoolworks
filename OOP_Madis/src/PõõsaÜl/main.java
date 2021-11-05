@@ -1,4 +1,4 @@
-package main.OOP_Madis.src.PõõsaÜl;
+package main.OOP_Madis.src.PÃµÃµsaÃœl;
 
 import java.util.Random;
 
@@ -8,16 +8,16 @@ public class main {
 
         Random r = new Random();
 
-        Põõsas[] p = new Põõsas[6];
+        PÃµÃµsas[] p = new PÃµÃµsas[6];
         for (int i = 0; i < 6; i++) {
-            Põõsas temp = new Põõsas(r.nextDouble(), r.nextDouble());
+            PÃµÃµsas temp = new PÃµÃµsas(r.nextDouble(), r.nextDouble());
         }
 
         Hekk hekk = new Hekk(p, "suvakas");
 
         System.out.println(hekk.toString());
 
-        for (Põõsas z : hekk.getPõõsad()
+        for (PÃµÃµsas z : hekk.getPÃµÃµsad()
              ) {
             System.out.println(z.toString());
         }

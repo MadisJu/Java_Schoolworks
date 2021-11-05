@@ -1,13 +1,13 @@
-package main.OOP_Madis.src.GaraaşAuto;
+package main.OOP_Madis.src.GaraaÅ¾Auto;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Garaaş
+public class GaraaÅ¾
 {
     ArrayList<Auto> autod = new ArrayList<Auto>();
 
-    public Garaaş(ArrayList<Auto> autod)
+    public GaraaÅ¾(ArrayList<Auto> autod)
     {
         this.autod = autod;
     }
@@ -16,27 +16,27 @@ public class Garaaş
     {
         autod.add(auto);
     }
-    public void Eemalda_auto(String numbrimärk)
+    public void Eemalda_auto(String numbrimÃ¤rk)
     {
 
         int i = 0;
         for (Auto a : autod)
         {
-            if(a.getNumbrid().equalsIgnoreCase(numbrimärk))
+            if(a.getNumbrid().equalsIgnoreCase(numbrimÃ¤rk))
             {
 
             }
         }
     }
-    public void Kuva_margi_järgi()
+    public void Kuva_margi_jÃ¤rgi()
     {
 
     }
-    public void Kuva_värvi_järgi()
+    public void Kuva_vÃ¤rvi_jÃ¤rgi()
     {
 
     }
-    public void Kuva_kiiruse_järgi()
+    public void Kuva_kiiruse_jÃ¤rgi()
     {
 
     }

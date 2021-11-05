@@ -1,4 +1,4 @@
-package main.OOP_Madis.src.GaraaşAuto;
+package main.OOP_Madis.src.GaraaÅ¾Auto;
 
 public class main
 {

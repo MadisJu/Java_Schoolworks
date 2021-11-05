@@ -1,17 +1,30 @@
 package main.OOP_Madis.src.KT_OOP;
+// 12.A Programeerimine
+// Nimi: Madis-Julius Tamberg
+// Kuup√§ev: 05.11.2021
 
 import java.util.ArrayList;
 
-public class Ostuk‰ru
+public class Ostuk√§ru
 {
 
     private ArrayList<Toode> tooted;
     private int ID;
 
-    public Ostuk‰ru(int ID)
+    public Ostuk√§ru(int ID)
     {
         this.tooted = new ArrayList<Toode>();
         this.ID = ID;
+    }
+
+    public ArrayList<Toode> getTooted()
+    {
+        return tooted;
+    }
+
+    public int getID()
+    {
+        return ID;
     }
 
     public void LisaKorvi(Toode lisatavToode)

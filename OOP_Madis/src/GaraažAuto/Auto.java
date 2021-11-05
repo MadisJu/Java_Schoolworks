@@ -1,15 +1,15 @@
-package main.OOP_Madis.src.Garaa˛Auto;
+package main.OOP_Madis.src.Garaa≈æAuto;
 
 public class Auto
 {
-    private String automark, numbrid, v‰rv;
+    private String automark, numbrid, v√§rv;
     private int tippkiirus;
 
-    public Auto(String automark, String numbrid, String v‰rv, int tippkiirus)
+    public Auto(String automark, String numbrid, String v√§rv, int tippkiirus)
     {
         this.automark = automark;
         this.numbrid = numbrid;
-        this.v‰rv = v‰rv;
+        this.v√§rv = v√§rv;
         this.tippkiirus = tippkiirus;
     }
 
@@ -33,14 +33,14 @@ public class Auto
         this.numbrid = numbrid;
     }
 
-    public String getV‰rv()
+    public String getV√§rv()
     {
-        return v‰rv;
+        return v√§rv;
     }
 
-    public void setV‰rv(String v‰rv)
+    public void setV√§rv(String v√§rv)
     {
-        this.v‰rv = v‰rv;
+        this.v√§rv = v√§rv;
     }
 
     public int getTippkiirus()
@@ -58,7 +58,7 @@ public class Auto
         final StringBuffer sb = new StringBuffer("Auto{");
         sb.append("automark='").append(automark).append('\'');
         sb.append(", numbrid='").append(numbrid).append('\'');
-        sb.append(", v‰rv='").append(v‰rv).append('\'');
+        sb.append(", v√§rv='").append(v√§rv).append('\'');
         sb.append(", tippkiirus=").append(tippkiirus);
         sb.append('}');
         return sb.toString();
