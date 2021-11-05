@@ -1,20 +1,20 @@
-package main.OOP_Madis.src.PõõsaÜl;
+package main.OOP_Madis.src.PÃµÃµsaÃœl;
 
-public class Põõsas {
-    private double kõrgus;
+public class PÃµÃµsas {
+    private double kÃµrgus;
     private double laius;
 
-    public Põõsas(double kõrgus, double laius) {
-        this.kõrgus = kõrgus;
+    public PÃµÃµsas(double kÃµrgus, double laius) {
+        this.kÃµrgus = kÃµrgus;
         this.laius = laius;
     }
 
-    public double getKõrgus() {
-        return kõrgus;
+    public double getKÃµrgus() {
+        return kÃµrgus;
     }
 
-    public void setKõrgus(double kõrgus) {
-        this.kõrgus = kõrgus;
+    public void setKÃµrgus(double kÃµrgus) {
+        this.kÃµrgus = kÃµrgus;
     }
 
     public double getLaius() {
@@ -27,8 +27,8 @@ public class Põõsas {
 
     @Override
     public String toString() {
-        return "Põõsas{" +
-                "kõrgus=" + kõrgus +
+        return "PÃµÃµsas{" +
+                "kÃµrgus=" + kÃµrgus +
                 ", laius=" + laius +
                 '}';
     }

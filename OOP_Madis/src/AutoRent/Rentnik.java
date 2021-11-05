@@ -18,8 +18,8 @@ public class Rentnik {
 
     public double Hind(Auto a )
     {
-        long suv_kuup‰ev = a.suvalinekuup‰ev().toEpochDay();
-        return a_rendihind * (suv_kuup‰ev - LocalDate.now().toEpochDay()) - (a_rendihind * (suv_kuup‰ev - LocalDate.now().toEpochDay()) * 0.2);
+        long suv_kuup√§ev = a.suvalinekuup√§ev().toEpochDay();
+        return a_rendihind * (suv_kuup√§ev - LocalDate.now().toEpochDay()) - (a_rendihind * (suv_kuup√§ev - LocalDate.now().toEpochDay()) * 0.2);
     }
 
     public double Hind(Auto a, LocalDate kuup)

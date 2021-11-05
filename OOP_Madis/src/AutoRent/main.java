@@ -50,12 +50,12 @@ public class main {
         /*
 
                     THIS NEXT PART IS SERIOUSLY SCUFFED, I JUST CBA TO DO THIS NORMALLY THE
-                    T÷÷KƒSUD ON NII CONFUSING LIHTSALT.
+                    T√ñ√ñK√ÑSUD ON NII CONFUSING LIHTSALT.
 
          */
         mainloop : while(true)
         {
-            System.out.println("Millise rentniku poole soovite pˆˆrduda?");
+            System.out.println("Millise rentniku poole soovite p√∂√∂rduda?");
             String input = s.nextLine();
 
             for (Rentnik r: rentni)
@@ -66,30 +66,30 @@ public class main {
 
                     for (Auto x : r.getAutod())
                     {
-                        LocalDate suv_kuup‰ev = x.suvalinekuup‰ev();
-                        System.out.println("kas soovite " + x.toString() + " autot " + suv_kuup‰ev.toString() + "kuup‰evani hinnaga " + r.Hind(x, suv_kuup‰ev));
+                        LocalDate suv_kuup√§ev = x.suvalinekuup√§ev();
+                        System.out.println("kas soovite " + x.toString() + " autot " + suv_kuup√§ev.toString() + "kuup√§evani hinnaga " + r.Hind(x, suv_kuup√§ev));
 
                     }
 
-                    System.out.println("Kas soovite eripakkumisi vıi kindlat autot kindlale kuup‰evale? (E/K)");
+                    System.out.println("Kas soovite eripakkumisi v√µi kindlat autot kindlale kuup√§evale? (E/K)");
                     input = s.nextLine();
 
                     if(input.equalsIgnoreCase("e"))
                     {
-                        System.out.println("Vıtsite ¸he eripakkumise, minge kassa poole et t‰psustada millist, kena p‰eva!");
+                        System.out.println("V√µtsite √ºhe eripakkumise, minge kassa poole et t√§psustada millist, kena p√§eva!");
                         break mainloop;
                     }
                     else
                     {
-                        System.out.println("Valige auto (Numbrimargi j‰rgi): ");
+                        System.out.println("Valige auto (Numbrimargi j√§rgi): ");
                         input = s.nextLine();
                         for (Auto y : r.getAutod())
                         {
                             if(y.getRegistrinumber().equalsIgnoreCase(input))
                             {
-                                System.out.println("Valige kuup‰ev eraldi ridadele(aasta, kuu, p‰ev) ");
-                                LocalDate antudkuup‰ev = LocalDate.of(s.nextInt(), s.nextInt(), s.nextInt());
-                                System.out.println("Antud auto hinnaks on : " + r.Hind(y, antudkuup‰ev));
+                                System.out.println("Valige kuup√§ev eraldi ridadele(aasta, kuu, p√§ev) ");
+                                LocalDate antudkuup√§ev = LocalDate.of(s.nextInt(), s.nextInt(), s.nextInt());
+                                System.out.println("Antud auto hinnaks on : " + r.Hind(y, antudkuup√§ev));
                                 break mainloop;
                             }
                         }
