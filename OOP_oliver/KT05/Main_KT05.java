@@ -24,7 +24,6 @@ public class Main_KT05 {
             String rida = sisu.nextLine();
             String[] rida_poolitatud = rida.split(" ");
 
-
             Toode toode = toote_tagastamine(rida_poolitatud);
 
 
@@ -34,8 +33,8 @@ public class Main_KT05 {
             } else {
                 olemasolevad_ID.add(toode.ID);
                 ArrayList<Toode> tooted = new ArrayList<>();
-                tooted.add(toode);
                 Ostukaru ostukaru = new Ostukaru(toode.ID, tooted);
+                ostukaru.lisakorvi(toode);
                 ostukorvid.add(ostukaru);
             }
         }

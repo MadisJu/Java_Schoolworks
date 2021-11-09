@@ -14,7 +14,7 @@ public class Ostukaru {
 
     public Ostukaru(int ID, ArrayList<Toode> tooted) {
         this.ID = ID;
-        this.tooted = tooted;
+        this.tooted = new ArrayList<>();
     }
 
     public void lisakorvi(Toode toode) {
