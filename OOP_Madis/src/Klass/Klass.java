@@ -1,51 +1,62 @@
 package main.OOP_Madis.src.Klass;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Objects;
+
+
 
 public class Klass
 {
     private String ID;
-    private ArrayList<’pilane> ıpilased;
+    private ArrayList<√ïpilane> √µpilased;
 
-    public Klass(String ID, ArrayList<’pilane> ıpilased)
+    public Klass(String ID, ArrayList<√ïpilane> √µpilased)
     {
         this.ID = ID;
-        this.ıpilased = ıpilased;
+        this.√µpilased = √µpilased;
     }
 
     public Klass(String ID)
     {
         this.ID = ID;
+        this.√µpilased = new ArrayList<√ïpilane>();
     }
 
-    public ’pilane vanim’pilane()
+    public √ïpilane vanim√ïpilane()
     {
-        ’pilane cur_vanim = this.ıpilased.get(0);
+        √ïpilane cur_vanim = this.√µpilased.get(0);
 
-        for (’pilane temp_ı: this.ıpilased)
+        for (√ïpilane temp_√µ: this.√µpilased)
         {
-            if(temp_ı.getVanus() > cur_vanim.getVanus())
-                cur_vanim = temp_ı;
+            if(temp_√µ.getVanus() > cur_vanim.getVanus())
+                cur_vanim = temp_√µ;
         }
 
         return cur_vanim;
     }
 
-    public String KasRohkemPoisseVıiT¸drukuid()
+    public String KasRohkemPoisseV√µiT√ºdrukuid()
     {
-        int poisid = 0, t¸drukud = 0;
+        int poisid = 0, t√ºdrukud = 0;
 
-        for (’pilane ıp: this.ıpilased)
+        for (√ïpilane √µp: this.√µpilased)
         {
-            if(ıp.getSugu() == "mees" ? true : false) poisid++; else t¸drukud++;
+            if(Objects.equals(√µp.getSugu(), "mees")) poisid++; else t√ºdrukud++;
         }
 
-        return poisid > t¸drukud ? "Poisse on rohkem" : "T¸drukuid on rohkem";
+        return poisid > t√ºdrukud ? "Poisse on rohkem" : "T√ºdrukuid on rohkem";
     }
 
-    public String klassiNimekiri()
+    public void klassiNimekiri()
     {
-        return "";
+        Collections.sort(√µpilased);
+
+        for (√ïpilane √µp: √µpilased)
+        {
+            System.out.println(√µp.Info());
+        }
     }
 
     public String getID()
@@ -53,13 +64,13 @@ public class Klass
         return ID;
     }
 
-    public ArrayList<’pilane> get’pilased()
+    public ArrayList<√ïpilane> get√ïpilased()
     {
-        return ıpilased;
+        return √µpilased;
     }
 
-    public void Lisa’pilane(’pilane ıpilane)
+    public void Lisa√ïpilane(√ïpilane √µpilane)
     {
-        this.ıpilased.add(ıpilane);
+        this.√µpilased.add(√µpilane);
     }
 }

@@ -1,12 +1,12 @@
 package main.OOP_Madis.src.Klass;
 
-public class Õpilane
+public class Ã•pilane implements Comparable<Ã•pilane>
 {
 
     private String nimi, klass, sugu;
     private int vanus;
 
-    public Õpilane(String nimi, String klass, String sugu, int vanus)
+    public Ã•pilane(String nimi, String klass, String sugu, int vanus)
     {
         this.nimi = nimi;
         this.klass = klass;
@@ -17,7 +17,7 @@ public class Õpilane
 
     public String Info()
     {
-        final StringBuilder sb = new StringBuilder("Õpilane{");
+        final StringBuilder sb = new StringBuilder("Ã•pilane{");
         sb.append("nimi='").append(nimi).append('\'');
         sb.append(", klass='").append(klass).append('\'');
         sb.append(", sugu='").append(sugu).append('\'');
@@ -64,5 +64,11 @@ public class Õpilane
     public void setVanus(int vanus)
     {
         this.vanus = vanus;
+    }
+
+    @Override
+    public int compareTo(Ã•pilane o)
+    {
+        return 0;
     }
 }

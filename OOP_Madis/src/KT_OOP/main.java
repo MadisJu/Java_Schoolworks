@@ -18,7 +18,7 @@ public class main
     {
         ostukärud = new ArrayList<Ostukäru>();
 
-        File fail = new File("OOP_Madis/src/KT_OOP/e2.txt");
+        File fail = new File("OOP_Madis/src/KT_OOP/e2");
         Scanner lugeja = new Scanner(fail);
 
         while(lugeja.hasNext())
