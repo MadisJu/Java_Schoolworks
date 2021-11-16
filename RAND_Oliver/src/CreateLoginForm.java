@@ -10,8 +10,8 @@ class CreateLoginForm extends JFrame implements ActionListener
     JButton b1;
     JPanel newPanel;
     JLabel userLabel, passLabel;
-    final JTextField  textField1;
-    JTextField textField2;
+    final JTextField  textField1, textField2;
+    JLabel textField3;
 
     CreateLoginForm()
     {
@@ -26,14 +26,18 @@ class CreateLoginForm extends JFrame implements ActionListener
 
         textField2 = new JPasswordField(15);
 
+        textField3 = new JLabel();
+        textField3.setText(" ");
+
         b1 = new JButton("SUBMIT");
 
-        newPanel = new JPanel(new GridLayout(4, 2));
+        newPanel = new JPanel(new GridLayout(5, 2));
         newPanel.add(userLabel);
         newPanel.add(textField1);
         newPanel.add(passLabel);
         newPanel.add(textField2);
         newPanel.add(b1);
+        newPanel.add(textField3);
 
         add(newPanel, BorderLayout.CENTER);
         add(b1, BorderLayout.AFTER_LAST_LINE);
@@ -48,24 +52,28 @@ class CreateLoginForm extends JFrame implements ActionListener
         String userValue = textField1.getText();
         String passValue = textField2.getText();
 
-        if (userValue.equals("test1@gmail.com") && passValue.equals("test")) {
+        if (userValue.equals("a") && passValue.equals("a")) {
 
-            NewPage page = new NewPage();
+            String wel_label = "Welcome: "+userValue;
+            String wel_text = "text here";
 
-            page.setVisible(true);
+            new NewPage(wel_label, wel_text);
 
-            JLabel wel_label = new JLabel("Welcome: "+userValue);
-            page.getContentPane().add(wel_label);
+
         }
         else{
-            textField2 = new JTextField("Wrong password", 15);
-            newPanel.add(textField2);
+            Timer t = new Timer(1500, e -> textField3.setText(null));
+            t.setRepeats(false);
+
+            textField3.setText("Wrong password");
+            t.start();
+
         }
     }
 }
 class LoginFormDemo
 {
-    public static void main(String arg[])
+    public static void main(String[] arg)
     {
         try
         {
