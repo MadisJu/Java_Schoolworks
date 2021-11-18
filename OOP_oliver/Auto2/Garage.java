@@ -64,6 +64,8 @@ public class Garage {
 
         for (int i = 0; i < list_speeds.size(); i++){
 
+            //NO CLUE WHY IT DOESNT WORK
+
 
             System.out.println(list_speeds.get(i));
 

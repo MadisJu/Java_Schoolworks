@@ -16,7 +16,7 @@ public class Main_KT05 {
         ArrayList<Ostukaru> ostukorvid = new ArrayList<>();
         ArrayList<Integer> olemasolevad_ID = new ArrayList<>();
 
-        File fail = new File("C:\\Users\\oliver.puusalu\\IdeaProjects\\Java_Schoolworks\\OOP_oliver\\KT05\\e2_new.txt");
+        File fail = new File("OOP_oliver/KT05/e2_new.txt");
         Scanner sisu = new Scanner(fail);
 
         while (sisu.hasNext()) {
