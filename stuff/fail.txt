@@ -1,0 +1,2 @@
+Simply put, it enables us to minimize the number of I/O operations by reading chunks of characters and storing them in an internal buffer.
+While the buffer has data, the reader will read from it instead of directly from the underlying stream.
