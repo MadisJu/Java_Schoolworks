@@ -51,7 +51,14 @@ public class Klass
 
     public void klassiNimekiri()
     {
-        Collections.sort(õpilased);
+        Collections.sort(õpilased, new Comparator<Õpilane>()
+        {
+            @Override
+            public int compare(Õpilane o1, Õpilane o2)
+            {
+                return o1.compareTo(o2);
+            }
+        });
 
         for (Õpilane õp: õpilased)
         {
