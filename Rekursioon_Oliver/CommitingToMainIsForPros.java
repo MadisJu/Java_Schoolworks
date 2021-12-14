@@ -8,7 +8,6 @@ public class CommitingToMainIsForPros {
 
         // numbrid esimese jaoks
         int[] numbers = {1, 2, 3, 4, 5};
-
         // esimese kontroll
         System.out.println(isInList(numbers, 3));
         // teise kontroll
@@ -43,5 +42,4 @@ public class CommitingToMainIsForPros {
             return str.charAt(0) + removeVowels(str.substring(1));
         }
     }
-
 }
