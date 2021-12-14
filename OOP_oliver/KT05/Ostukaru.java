@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 //12. a programmeerimine
 //Nimi : Oliver Puusalu
-//Kuup‰ev : 05/11/2021
+//Kuup√§ev : 05/11/2021
 
 public class Ostukaru {
 

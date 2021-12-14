@@ -19,6 +19,10 @@ public class Borrower {
         this.SUV_daily_rent = SUV_daily_rent;
     }
 
+    public String getCompany_name() {
+        return company_name;
+    }
+
     public ArrayList<Car> getAvailable_cars() {
         return available_cars;
     }

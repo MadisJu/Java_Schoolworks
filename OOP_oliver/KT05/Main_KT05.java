@@ -16,6 +16,7 @@ public class Main_KT05 {
         ArrayList<Ostukaru> ostukorvid = new ArrayList<>();
         ArrayList<Integer> olemasolevad_ID = new ArrayList<>();
 
+
         File fail = new File("OOP_oliver/KT05/e2_new.txt");
         Scanner sisu = new Scanner(fail);
 
@@ -33,6 +34,7 @@ public class Main_KT05 {
             } else {
                 olemasolevad_ID.add(toode.ID);
                 ArrayList<Toode> tooted = new ArrayList<>();
+
                 Ostukaru ostukaru = new Ostukaru(toode.ID, tooted);
                 ostukaru.lisakorvi(toode);
                 ostukorvid.add(ostukaru);

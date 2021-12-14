@@ -15,7 +15,7 @@ public class Main_Car {
 
         ArrayList<Car> cars = new ArrayList<>();
         ArrayList<Borrower> borrowers = new ArrayList<>();
-        ArrayList<String> borrower_names = new ArrayList<>();
+        ArrayList<String> borrowers_names = new ArrayList<>();
         ArrayList<Car> available_cars = new ArrayList<>();
 
         File file1 = new File("OOP_oliver/Auto/autod.txt");
@@ -44,25 +44,43 @@ public class Main_Car {
 
             String[] line_splitted = line.strip().split(" ");
 
-            borrower_names.add(line_splitted[0]);
-
-            Random random = new Random();
-
-            while (!cars.isEmpty()) {
-
-                int random_temp_int = random.nextInt(cars.size());
-
-                available_cars.add(cars.get(random_temp_int));
-                cars.remove(random_temp_int);
-
-            }
+            borrowers_names.add(line_splitted[0]);
 
             Borrower aaron = new Borrower(line_splitted[0], available_cars, Double.parseDouble(line_splitted[1]), Double.parseDouble(line_splitted[2]));
             borrowers.add(aaron);
 
         }
-
         content2.close();
+
+        int current_borrower = 0;
+        int a = 0;
+        boolean is_already_looped = false;
+
+        ArrayList<ArrayList<Car>> available_cars_list = new ArrayList<>();
+
+        available_cars_list.add(available_cars);
+
+        while (!cars.isEmpty()) {
+
+            if (current_borrower >= borrowers.size()) {
+                current_borrower = current_borrower-borrowers.size();
+                is_already_looped = true;
+            }
+            if (is_already_looped) {
+                available_cars = available_cars_list.get(current_borrower);
+            }
+
+            available_cars.add(cars.get(a));
+            available_cars_list.add(available_cars);
+
+            borrowers.get(current_borrower).setAvailable_cars(available_cars_list.get(current_borrower));
+            available_cars.removeAll(cars);
+            cars.remove(a);
+            ++current_borrower;
+
+            System.out.println(borrowers.get(current_borrower).getAvailable_cars());
+
+        }
 
         while (true) {
 
@@ -71,7 +89,14 @@ public class Main_Car {
             Scanner input_to_get_name = new Scanner(System.in);
             String input_name = input_to_get_name.nextLine();
 
-            if (borrower_names.contains(input_name)) {
+            System.out.println(available_cars_list.get(1));
+
+            available_cars = available_cars_list.get(borrowers_names.indexOf(input_name)+1);
+
+            if (borrowers_names.contains(input_name)) {
+
+                System.out.println(available_cars.size());
+
                 for (Car car : available_cars
                      ) {
                     System.out.println(car.toString());
@@ -87,10 +112,10 @@ public class Main_Car {
                 Scanner input_to_get_reg_num = new Scanner(System.in);
                 String input_reg_num = input_to_get_reg_num.nextLine();
 
-                for (Car car : available_cars
-                     ) {
+                for (Car car : available_cars)
+                {
                     if (Objects.equals(car.getReg_num(), input_reg_num)) {
-                        System.out.println(borrowers.get(borrower_names.indexOf(input_name)).RentToSetDate(car, input_date, available_cars));
+                        System.out.println(borrowers.get(borrowers.indexOf(input_name)).RentToSetDate(car, input_date, available_cars));
                     }
                 }
 
