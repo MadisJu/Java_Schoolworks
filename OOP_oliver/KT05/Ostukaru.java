@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 //12. a programmeerimine
 //Nimi : Oliver Puusalu
-//Kuup‰ev : 05/11/2021
+//Kuup√§ev : 05/11/2021
 
 public class Ostukaru {
 
@@ -14,7 +14,7 @@ public class Ostukaru {
 
     public Ostukaru(int ID, ArrayList<Toode> tooted) {
         this.ID = ID;
-        this.tooted = tooted;
+        this.tooted = new ArrayList<>();
     }
 
     public void lisakorvi(Toode toode) {

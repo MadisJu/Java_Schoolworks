@@ -2,7 +2,24 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Faililugemine/noolemangu_tulemused.txt" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/OOP_oliver/KT05/Main_KT05.java" charset="windows-1257" />
-    <file url="PROJECT" charset="windows-1257" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/AutoRent/Auto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/AutoRent/Rentnik.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/AutoRent/main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/GaraažAuto/Auto.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/GaraažAuto/Garaaž.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/GaraažAuto/main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/KT_OOP/Ostukäru.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/KT_OOP/Toode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/KT_OOP/main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/Klass/Klass.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/Klass/main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/Klass/Õpilane.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/LennukiÜl/Lennuk.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/LennukiÜl/Reis.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/LennukiÜl/main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/PõõsaÜl/Hekk.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/PõõsaÜl/Põõsas.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OOP_Madis/src/PõõsaÜl/main.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
