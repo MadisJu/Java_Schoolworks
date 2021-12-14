@@ -13,8 +13,6 @@ public class CommitingToMainIsForPros {
         System.out.println(isInList(numbers, 3));
         // teise kontroll
         System.out.println(removeVowels("telefon"));
-
-
     }
 
     // recursive method that checks if given number is in list
