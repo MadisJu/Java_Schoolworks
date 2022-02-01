@@ -20,6 +20,6 @@ public class Euler15 {
     }
 
     public static void main(String[] args) {
-        System.out.println(pascalTriangle(6)[3]);
+        System.out.println(pascalTriangle(40)[20]);
     }
 }
