@@ -1,37 +1,32 @@
 package main.Rekursioon_Oliver;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class occurrence {
 
     public static void main(String[] args) {
 
-        LinkedList<Character> words = new LinkedList<>();
+        ArrayList<Character> words = new ArrayList<Character>();
         words.add('a');
-        words.add('a');
+        words.add('b');
         words.add('a');
 
-        System.out.println(recursion('a', words, 3));
+        System.out.println(recursion('a', words, 2));
 
     }
-
     //Using recursion to find the number of occurrences of a character in a arraylist
-    public static boolean recursion(char letter, LinkedList<Character> words, int amount) {
-        if (amount == 0 && words.isEmpty()) {
+    public static boolean recursion(char letter, ArrayList<Character> words, int amount){
+        if (amount == 0){
             return true;
-        } else if (amount == 0) {
-            return false;
         }
-        if (words.size() == 0) {
-            return false;
+        if (words.get(0) == letter){
+            return recursion(letter, (ArrayList<Character>) words.subList(1, words.size()), amount - 1);
         }
-        else if (words.getFirst() == letter) {
-            words.remove();
-            return recursion(letter, words, amount - 1);
-        }
-        else {
-            words.remove();
-            return recursion(letter, words, amount);
-        }
+        return false;
+
     }
+
+
+
 }
+
