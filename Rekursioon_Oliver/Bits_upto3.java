@@ -6,21 +6,21 @@ public class Bits_upto3 {
 
     public static void main(String[] args) {
 
-        recursion(3, "");
+        recursion(5, 10, "");
     }
 
-    public static void recursion(int n, String bits) {
+    public static void recursion(int n, int k, String bits) {
 
-        if (n == 0 && bits.length() == 10)
+        if (n == 0 && bits.length() == k)
         {
             System.out.println(bits);
         }
-        else if (bits.length() < 10)
+        else if (bits.length() < k)
         {
             if (n != 0){
-                recursion(n - 1, bits + "1");
+                recursion(n - 1, k, bits + "1");
             }
-            recursion(n, bits + "0");
+            recursion(n, k, bits + "0");
         }
     }
 
