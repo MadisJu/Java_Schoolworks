@@ -1,6 +1,7 @@
 package main.stuff;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class display_files {
@@ -9,6 +10,7 @@ public class display_files {
 
         File folder =  new File("D:\\Desktop\\Koolitööd(homeworks.com)");
         File[] listOfFiles = folder.listFiles();
+        System.out.println(Arrays.toString(listOfFiles));
 
         assert listOfFiles != null;
         display_files(folder, listOfFiles, "");
@@ -16,10 +18,6 @@ public class display_files {
     }
 
     public static void display_files(File folder, File[] listOfFiles, String indent) {
-
-        //recursive method to display all files in a folder
-        //and all subfolders
-
 
         for (File file : listOfFiles) {
             if (file.isFile()) {
@@ -31,11 +29,7 @@ public class display_files {
                 display_files(file, Objects.requireNonNull(file.listFiles()), indent + "  ");
 
             }
-
         }
-
-
     }
-
 }
 
